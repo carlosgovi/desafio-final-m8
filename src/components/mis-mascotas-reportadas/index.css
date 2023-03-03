@@ -1,0 +1,156 @@
+.conteiner {
+  display: grid;
+  gap: 2%;
+  align-items: center;
+  padding: 20px;
+
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-flow: dense;
+}
+
+.title {
+  font-size: 20px;
+  margin: 30px 10px;
+}
+.subtitle {
+  font-size: 40px;
+  margin: 10px 10px;
+}
+.contimg {
+  width: 100vw;
+  height: 800px;
+
+  background-image: url("../../img/perrowellcome5.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parrafo {
+  font-size: 20px;
+  margin: 10px 20px;
+  font-weight: 250;
+  text-align: center;
+}
+
+.card {
+  z-index: 2;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 290px;
+  height: 354px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  overflow: hidden;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+  background-color: #98acb9;
+}
+
+.card .blob {
+  overflow: hidden;
+  height: 10px;
+  width: 75%;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+  background-color: #98acb9;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.card:hover .blob {
+  overflow: hidden;
+  height: 0;
+}
+
+.card .img {
+  overflow: hidden;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 110px;
+  height: 110px;
+  background-color: #98acb9;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover .img {
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+}
+
+.card h2 {
+  overflow: hidden;
+  padding: 15px 10px;
+  font-size: 25px;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 17px;
+}
+
+.card span {
+  overflow: hidden;
+  font-size: 18px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+}
+
+.card:hover h2 {
+  overflow: hidden;
+  opacity: 0;
+
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.card > p {
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.75s;
+}
+.parrafo1 {
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.75s;
+  font-size: 15px;
+}
+
+.card > p > svg {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.card:hover .parrafo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  bottom: 15px;
+  left: 35px;
+  opacity: 1;
+  transition: all 0.1s;
+  padding: 2%;
+  text-align: justify;
+}
+.footer {
+  display: grid;
+  height: 250px;
+  color: #ffffff;
+  background-color: #333333;
+}

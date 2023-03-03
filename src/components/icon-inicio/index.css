@@ -1,0 +1,8 @@
+.icon_inicio {
+  cursor: pointer;
+  width: 144px;
+  height: 157px;
+  filter: drop-shadow(16px 6px 11px #000);
+  position: relative;
+  z-index: 1;
+}

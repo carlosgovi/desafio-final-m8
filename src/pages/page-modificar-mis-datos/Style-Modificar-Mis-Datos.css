@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Unbounded", cursive;
+  padding: 0;
+  margin: 0;
+}
+.conteiner {
+  width: 100vw;
+  height: 500px;
+  background-image: url("../../img/perrowellcome6jpeg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

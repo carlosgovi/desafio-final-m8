@@ -1,0 +1,117 @@
+.header {
+  width: 100vw;
+  height: 75px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger input {
+  display: none;
+}
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  z-index: 9;
+}
+.fullname {
+  color: rgba(133, 133, 255, 0.822);
+  font-weight: 500;
+}
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger .open > span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger .open > span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger .open > span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+.logo {
+  width: 100vw;
+  height: 85%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu_burguer {
+  transform: translateY(-2000px);
+  transition: 400ms;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+.menu_active {
+  transform: translateY(0);
+}
+.div_ancla {
+  cursor: pointer;
+  padding-top: 60px;
+  color: white;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+#user {
+  display: none;
+  color: rgb(96, 170, 240);
+  margin-top: 80px;
+  font-size: 20px;
+}
+#cerrar {
+  display: none;
+  padding-top: 20px;
+}

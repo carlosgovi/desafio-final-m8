@@ -1,0 +1,28 @@
+.conteiner {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 20px;
+  margin: 30px 10px;
+}
+.subtitle {
+  font-size: 40px;
+  margin: 10px 10px;
+}
+.contimg {
+  width: 300px;
+  height: 400px;
+  margin-left: 2%;
+  background-image: url("../../img/gatowellcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parrafo {
+  font-size: 20px;
+  margin: 10px 20px;
+  font-weight: 250;
+  text-align: center;
+}

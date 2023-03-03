@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react",
+    "target": "es5",
+    "outDir": "./dist",
+    "baseUrl": "./src", // - Importacion de modulos tsconfig.json: (2do VIDEO min. 7 - 17):  tsconfig.json -->     "baseUrl": "./src" // Punto desde el cual importamos. OPCIONAL. Mayor comodidad para proyectos grandes, tenerlo en cuenta, es OPCIONAL y bastante estandar
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*.*"]
+}

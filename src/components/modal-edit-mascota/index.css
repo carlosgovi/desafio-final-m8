@@ -1,0 +1,159 @@
+.modal_content {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+
+  font-family: "Unbounded", cursive;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_modal {
+  width: 300px;
+  z-index: 2;
+  background: rgba(238, 211, 122, 0.9);
+  border-radius: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_modal {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.title_card_modal {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.inputbox {
+  position: relative;
+  width: 100%;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  margin: 25px -10px;
+  position: absolute;
+  left: 0;
+  padding: 0px 25px 10px;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: white;
+  transform: translateX(-10px) translateY(-38px);
+  font-size: 0, 75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+
+.foto_input {
+  overflow: hidden;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+  background: none;
+  border: solid white;
+  border-radius: 5px;
+  border-radius: 40px 0 40px 0;
+}
+.button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  right: 0px;
+  opacity: 0.5;
+  border-radius: 0 0 40px 0;
+  border: none;
+  color: #5770c4;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Unbounded", cursive;
+}
+.name_animal {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.close {
+  cursor: pointer;
+  font-size: 52px;
+  text-align: end;
+  padding-right: 20px;
+}
+/* style geo */
+.mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont_map {
+  width: 100%;
+  height: 200px;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.text_geo {
+  text-align: center;
+  color: white;
+}
